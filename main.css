@@ -1,0 +1,72 @@
+html {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+    background-image: url(img/BG.jpg);
+    background-repeat: no-repeat;
+    background-size: 100vmax;
+ 
+}
+
+.title {
+    display: inline;
+    text-align: center;
+    
+}
+.game_container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.row {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+   padding-left: 400px;
+   
+   perspective: 1000px;
+   width: 800px;
+   height: 300px;
+   justify-content: space-evenly;
+}
+
+.card {
+    
+    display: flex;
+    width: 120px;
+    height: 170px;
+    margin: .3rem;
+    border: 2px solid;
+}
+    
+.card:hover {
+    cursor: pointer;
+}   
+
+
+.card__back {
+    background-image: url(img/BF.jpg)
+}
+
+.war {
+    background-image: url(img/01.jpg);
+}
+.winter {
+    background-image: url(img/02.jpg);
+}
+.fog {
+    background-image: url(img/03.jpg);
+}
+.bridge {
+    background-image: url(img/04.jpg);
+}
+.street {
+    background-image: url(img/05.jpg);
+}
+
+
