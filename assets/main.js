@@ -1,24 +1,24 @@
 (function () {
-    const pics = [
+    const icons = [
 
-        'war',
-        'winter',
-        'fog',
-        'bridge',
-        'street',
+        'fa-bell',
+        'fa-anchor',
+        'fa-plug',
+        'fa-motorcycle',
+        'fa-cogs',
     ];
 
 
-    const getTheCards = (pics) => {
+    const getTheCards = (icons) => {
         const div = document.createElement('div');
         div.classList.add('card');
-        div.insertAdjacentHTML = `<div class="card__front">
-    <img "${pics}" alt="no bonus">
-</div>
-<div class="card__back">
-<img src="img/BF.jpg" alt="backface">
-</div>
-</div>`;
+        div.innerHTML =  
+        `<div class="card__front">
+    <i class=" fa ${icons}"></i>
+        </div>
+        <div class="card__back">
+    <img src="pair-game/assets/img/BF.jpg" alt="back">
+        </div>`;
         return div;
     };
 
@@ -43,14 +43,14 @@
         return array;
     }
     // show cards
-    const picsArray = pics.concat(pics);
-    shuffle(picsArray);
+    const iconsArray = icons.concat(icons);
+    shuffle(iconsArray);
     const row1 = document.querySelector('.row:nth-child(2)');
     const row2 = document.querySelector('.row:nth-child(3)');
     let i = 0;
-    for (const pics of picsArray) {
+    for (const icons of iconsArray) {
         i += 1;
-        const card = getTheCards(pics)
+        const card = getTheCards(icons)
         if (i < 6) {
             row1.appendChild(card);
         } else {
@@ -58,4 +58,14 @@
         }
 
     }
+
+    const cardClick = (eve) => {
+eve.currentTarget.classList.toggle('flipped');
+ };
+
+    const cards = document.querySelectorAll('.card')
+    cards.forEach(card => {
+        card.addEventListener('click', cardClick);
+    })
+
 })();

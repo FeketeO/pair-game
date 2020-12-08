@@ -6,7 +6,7 @@ body {
     margin: 0;
     padding: 0%;
     box-sizing: border-box;
-    background-image: url(img/BG.jpg);
+    background-image: url(../assets/img/BG.jpg);
     background-repeat: no-repeat;
     background-size: 100vmax;
  
@@ -42,31 +42,24 @@ body {
     height: 170px;
     margin: .3rem;
     border: 2px solid;
+    background-color: transparent;
+    padding: 0;
 }
     
 .card:hover {
     cursor: pointer;
 }   
+.card__back{
+    width: 100%;
+}
+.card__back img {
+    width: 100%;
+}
 
+.card__front {
+    display: none;
+}
 
-.card__back {
+/* .card__back {
     background-image: url(img/BF.jpg)
-}
-
-.war {
-    background-image: url(img/01.jpg);
-}
-.winter {
-    background-image: url(img/02.jpg);
-}
-.fog {
-    background-image: url(img/03.jpg);
-}
-.bridge {
-    background-image: url(img/04.jpg);
-}
-.street {
-    background-image: url(img/05.jpg);
-}
-
-
+} */
