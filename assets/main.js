@@ -17,7 +17,7 @@
     <i class=" fa ${icons}"></i>
         </div>
         <div class="card__back">
-    <img src="/assets/img/BG_2.jpg" alt="back">
+    <img src="/assets/img/new-back2.jpg" alt="back">
         </div>`;
         return div;
     };
@@ -49,7 +49,7 @@
     const row2 = document.querySelector('.row:nth-child(3)');
     let i = 0;
     for (const icons of iconsArray) {
-        i += 1;
+        i ++;
         const card = getTheCards(icons)
         if (i < 6) {
             row1.appendChild(card);

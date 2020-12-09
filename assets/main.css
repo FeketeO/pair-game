@@ -1,13 +1,15 @@
 html {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family:fantasy;
+    color: bisque;
 }
+
+
 
 body {
     margin: 0;
     padding: 0%;
     box-sizing: border-box;
-    background-image: url(img/BG_n.jpg);
-    background-repeat: no-repeat;
+    background-image: url(img/forest-lights-color-fantasy-iw.jpg);
     background-size: 100vmax;
  
 }
@@ -89,22 +91,5 @@ body {
 }
 
 /* .card__back {
-    background-image: url(img/BF.jpg)
+    background-image: url(img/new-back2.jpg)
 } */
-
-/* .war {
-    background-image: url(/assets/img/war.jpg);
-.card__back{
-    width: 100%;
-}
-.winter {
-    background-image: url(/assets/img/winter.jpg);
-}
-.fog {
-    background-image: url(/assets/img/fog.jpg);
-}
-.bridge {
-    background-image: url(/assets/img/bridge.jpg);
-}
-.street {
-    background-image: url(/assets/img/street.jpg); */
