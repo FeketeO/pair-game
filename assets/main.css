@@ -6,7 +6,7 @@ body {
     margin: 0;
     padding: 0%;
     box-sizing: border-box;
-    background-image: url(img/);
+    background-image: url(img/BG_n.jpg);
     background-repeat: no-repeat;
     background-size: 100vmax;
  
@@ -83,7 +83,7 @@ body {
     height: 100%; 
     backface-visibility: hidden;
 }
-.card.flipped {
+.card.flipped, .card.found {
  transform: rotateY(180deg);
 
 }

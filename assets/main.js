@@ -8,7 +8,7 @@
         'fa-cogs',
     ];
 
-    let point = 0;
+    let points = 0;
     const getTheCards = (icons) => {
         const div = document.createElement('div');
         div.classList.add('card');
@@ -89,14 +89,17 @@
     }
 
     const checkPair = () => {
+        
             const firstCardIcon = document.querySelector('.card.flipped i');
             if (firstCardIcon) {
-                const firstIconClass = firstCardIcon.className.split('');
-                const pair = document.querySelectorAll('.card.flipped .$(firstIconClass.pop()}')
+                const firstIconClass = firstCardIcon.className.split(' ');
+                const pair = document.querySelectorAll(`.card.flipped .${firstIconClass.pop()}`);
                 
                 if (pair.length == 2 ) {
-                        point +=1
+                        points ++;
                         showPoints(points);
+                        document.querySelectorAll(`.card.flipped`).forEach(
+                            card => card.classList.add('found'));
                 }
             }
 
